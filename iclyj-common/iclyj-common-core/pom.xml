@@ -8,10 +8,9 @@
         <version>1.0.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
-    <groupId>iclyj</groupId>
+    
     <artifactId>iclyj-common-core</artifactId>
-    <version>1.0.0</version>
+    
 
     <description>
         核心模块

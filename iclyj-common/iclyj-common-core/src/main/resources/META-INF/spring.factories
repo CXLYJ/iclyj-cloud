@@ -1,2 +1,2 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-  com.lyj.utils.SpringUtils
+  com.lyj.common.core.utils.SpringUtils
