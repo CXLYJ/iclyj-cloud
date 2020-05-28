@@ -3,7 +3,7 @@ package com.lyj.system.controller;
 import com.lyj.common.core.domain.R;
 import com.lyj.common.core.web.controller.BaseController;
 import com.lyj.system.api.domain.SysUser;
-import com.lyj.system.model.UserInfo;
+import com.lyj.system.api.model.UserInfo;
 import com.lyj.system.service.ISysPermissionService;
 import com.lyj.system.service.ISysUserService;
 import org.springframework.beans.factory.annotation.Autowired;
