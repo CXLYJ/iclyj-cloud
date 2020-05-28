@@ -75,7 +75,7 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
         http.csrf().disable();
         ExpressionUrlAuthorizationConfigurer<HttpSecurity>.ExpressionInterceptUrlRegistry registry = http
                 .authorizeRequests();
-        // 不登录可以访问
+        // 不登录可以访问的接口
         authIgnoreConfig().getUrls().forEach(url -> registry.antMatchers(url).permitAll());
         registry.anyRequest().authenticated();
     }
