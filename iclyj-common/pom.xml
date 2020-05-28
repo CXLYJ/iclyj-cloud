@@ -19,6 +19,7 @@
     </description>
     <modules>
         <module>iclyj-common-core</module>
+        <module>iclyj-common-security</module>
     </modules>
 
 
