@@ -1,7 +1,7 @@
-package com.lyj.system.api.model;
+package com.lyj.common.core.system.api.model;
 
 
-import com.lyj.system.api.domain.SysUser;
+import com.lyj.common.core.system.api.domain.SysUser;
 
 import java.io.Serializable;
 import java.util.Set;

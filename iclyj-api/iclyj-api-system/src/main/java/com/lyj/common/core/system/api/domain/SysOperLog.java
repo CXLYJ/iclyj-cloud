@@ -1,9 +1,9 @@
-package com.lyj.system.api.domain;
+package com.lyj.common.core.system.api.domain;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.lyj.annotation.Excel;
-import com.lyj.annotation.Excel.ColumnType;
-import com.lyj.web.domain.BaseEntity;
+import com.lyj.common.core.annotation.Excel;
+import com.lyj.common.core.annotation.Excel.ColumnType;
+import com.lyj.common.core.web.domain.BaseEntity;
 
 import java.util.Date;
 

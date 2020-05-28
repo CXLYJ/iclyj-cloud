@@ -1,9 +1,9 @@
-package com.lyj.system.api;
+package com.lyj.common.core.system.api;
 
-import com.lyj.constant.ServiceNameConstants;
-import com.lyj.domain.R;
-import com.lyj.system.api.factory.RemoteUserFallbackFactory;
-import com.lyj.system.api.model.UserInfo;
+import com.lyj.common.core.constant.ServiceNameConstants;
+import com.lyj.common.core.domain.R;
+import com.lyj.common.core.system.api.factory.RemoteUserFallbackFactory;
+import com.lyj.common.core.system.api.model.UserInfo;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
