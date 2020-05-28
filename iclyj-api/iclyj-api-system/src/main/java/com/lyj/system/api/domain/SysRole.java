@@ -1,4 +1,4 @@
-package com.lyj.common.core.system.api.domain;
+package com.lyj.system.api.domain;
 
 import com.lyj.common.core.annotation.Excel;
 import com.lyj.common.core.annotation.Excel.ColumnType;

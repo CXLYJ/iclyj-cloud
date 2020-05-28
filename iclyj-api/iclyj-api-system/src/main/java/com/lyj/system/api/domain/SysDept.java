@@ -1,4 +1,4 @@
-package com.lyj.common.core.system.api.domain;
+package com.lyj.system.api.domain;
 
 import com.lyj.common.core.web.domain.BaseEntity;
 import org.apache.commons.lang3.builder.ToStringBuilder;

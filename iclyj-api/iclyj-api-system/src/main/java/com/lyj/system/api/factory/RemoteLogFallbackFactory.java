@@ -1,8 +1,8 @@
-package com.lyj.common.core.system.api.factory;
+package com.lyj.system.api.factory;
 
 
-import com.lyj.common.core.system.api.RemoteLogService;
-import com.lyj.common.core.system.api.domain.SysOperLog;
+import com.lyj.system.api.RemoteLogService;
+import com.lyj.system.api.domain.SysOperLog;
 import com.lyj.common.core.domain.R;
 import feign.hystrix.FallbackFactory;
 import org.slf4j.Logger;
