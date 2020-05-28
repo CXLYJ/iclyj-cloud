@@ -11,6 +11,9 @@
     
     <modules>
         <module>iclyj-common</module>
+        <module>iclyj-api</module>
+        <module>iclyj-modules</module>
+        <module>icly-auth</module>
     </modules>
 
     <name>iclyj</name>
