@@ -11,11 +11,15 @@
 
     <groupId>iclyj</groupId>
     <artifactId>iclyj-common</artifactId>
+    <packaging>pom</packaging>
     <version>1.0.0</version>
 
     <description>
         通用模块
     </description>
+    <modules>
+        <module>iclyj-common-core</module>
+    </modules>
 
 
 </project>
