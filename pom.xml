@@ -6,7 +6,12 @@
 
     <groupId>iclyj</groupId>
     <artifactId>iclyj-cloud</artifactId>
+    <packaging>pom</packaging>
     <version>1.0.0</version>
+    
+    <modules>
+        <module>iclyj-common</module>
+    </modules>
 
     <name>iclyj</name>
     <description>微服务系统</description>
