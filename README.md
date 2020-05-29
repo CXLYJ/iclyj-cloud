@@ -3,7 +3,7 @@
 
 > 该项目参考若依微服务搭建的基础认证授权微服务
 
-SpringCloudAlibaba + SpringCloud + Nacos + SpringSecurity + Oauth2.0 + Redis
+SpringCloudAlibaba + SpringCloud + Nacos + SpringSecurity + Oauth2.0 + Feign + Gateway + Redis
 
 ![](https://www.processon.com/view/link/5ea64660f346fb177b98c43b)
 
