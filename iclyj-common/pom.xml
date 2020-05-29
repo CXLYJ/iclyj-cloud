@@ -20,6 +20,7 @@
     <modules>
         <module>iclyj-common-core</module>
         <module>iclyj-common-security</module>
+        <module>iclyj-common-redis</module>
     </modules>
 
 
