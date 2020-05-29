@@ -2,7 +2,7 @@ package auth;
 
 import com.lyj.common.security.annotation.EnableLyjFeignClients;
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.SpringCloudApplication;
 
 /**
  * @author ：lyj
@@ -10,7 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @date ：2020/5/27
  */
 @EnableLyjFeignClients
-@SpringBootApplication
+@SpringCloudApplication
 public class LyjAuthApplication {
 
     public static void main(String[] args)
