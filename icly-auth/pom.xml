@@ -56,10 +56,10 @@
             <version>${iclyj.version}</version>
         </dependency>
 
-        <!-- SpringBoot Boot Redis -->
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-redis</artifactId>
+            <groupId>iclyj</groupId>
+            <artifactId>iclyj-common-redis</artifactId>
+            <version>${iclyj.version}</version>
         </dependency>
 
     </dependencies>
