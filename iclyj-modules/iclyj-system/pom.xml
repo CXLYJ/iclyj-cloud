@@ -61,7 +61,7 @@
         <dependency>
             <groupId>iclyj</groupId>
             <artifactId>iclyj-common-security</artifactId>
-            <version>1.0.0</version>
+            <version>${iclyj.version}</version>
         </dependency>
 
 
