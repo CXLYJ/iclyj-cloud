@@ -13,10 +13,10 @@ import org.springframework.cloud.client.SpringCloudApplication;
 @EnableCustomConfig
 @EnableLyjFeignClients
 @SpringCloudApplication
-public class IclyjSystemApplication {
+public class LyjSystemApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(IclyjSystemApplication.class, args);
+        SpringApplication.run(LyjSystemApplication.class, args);
         System.out.println("(♥◠‿◠)ﾉﾞ  系统模块启动成功   ლ(´ڡ`ლ)ﾞ  \n" );
     }
 
