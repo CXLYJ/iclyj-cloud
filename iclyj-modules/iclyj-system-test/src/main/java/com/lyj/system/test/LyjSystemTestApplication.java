@@ -11,6 +11,7 @@ import org.springframework.cloud.client.SpringCloudApplication;
  * @date ：2020/5/29
  */
 @EnableCustomConfig
+@EnableLyjFeignClients
 @SpringCloudApplication
 public class LyjSystemTestApplication {
 
