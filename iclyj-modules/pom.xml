@@ -21,6 +21,7 @@
     
     <modules>
         <module>iclyj-system</module>
+        <module>iclyj-system-test</module>
     </modules>
 
 
