@@ -51,6 +51,12 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>iclyj</groupId>
+            <artifactId>iclyj-common-redis</artifactId>
+            <version>${iclyj.version}</version>
+        </dependency>
         
 
     </dependencies>
