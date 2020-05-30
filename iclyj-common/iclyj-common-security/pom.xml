@@ -28,7 +28,6 @@
         <dependency>
             <groupId>iclyj</groupId>
             <artifactId>iclyj-api-system</artifactId>
-            <version>1.0.0</version>
         </dependency>
 
     </dependencies>

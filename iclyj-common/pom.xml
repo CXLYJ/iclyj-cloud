@@ -22,6 +22,7 @@
         <module>iclyj-common-security</module>
         <module>iclyj-common-redis</module>
         <module>iclyj-common-swagger</module>
+        <module>iclyj-common-datascope</module>
     </modules>
 
 

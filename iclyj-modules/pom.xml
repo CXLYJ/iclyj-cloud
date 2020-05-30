@@ -60,7 +60,32 @@
         <dependency>
             <groupId>iclyj</groupId>
             <artifactId>iclyj-common-swagger</artifactId>
-            <version>${iclyj.version}</version>
+        </dependency>
+
+        <!-- Swagger -->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>${swagger.fox.version}</version>
+        </dependency>
+
+        <!-- iclyj Common Security -->
+        <dependency>
+            <groupId>iclyj</groupId>
+            <artifactId>iclyj-common-security</artifactId>
+        </dependency>
+
+        <!-- iclyj Common Datascope -->
+      <!--  <dependency>
+            <groupId>iclyj</groupId>
+            <artifactId>iclyj-common-datascope</artifactId>
+        </dependency>-->
+        
+
+        <!-- Ruoyi Common Swagger -->
+        <dependency>
+            <groupId>iclyj</groupId>
+            <artifactId>iclyj-common-swagger</artifactId>
         </dependency>
 
     </dependencies>

@@ -26,13 +26,6 @@
             <artifactId>mysql-connector-java</artifactId>
         </dependency>
 
-        <!-- iclyj Common Security -->
-        <dependency>
-            <groupId>iclyj</groupId>
-            <artifactId>iclyj-common-security</artifactId>
-            <version>${iclyj.version}</version>
-        </dependency>
-
     </dependencies>
 
     <build>

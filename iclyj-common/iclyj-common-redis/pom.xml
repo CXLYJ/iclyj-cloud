@@ -27,7 +27,6 @@
         <dependency>
             <groupId>iclyj</groupId>
             <artifactId>iclyj-common-core</artifactId>
-            <version>${iclyj.version}</version>
         </dependency>
 
     </dependencies>
