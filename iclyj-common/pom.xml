@@ -21,6 +21,7 @@
         <module>iclyj-common-core</module>
         <module>iclyj-common-security</module>
         <module>iclyj-common-redis</module>
+        <module>iclyj-common-swagger</module>
     </modules>
 
 
