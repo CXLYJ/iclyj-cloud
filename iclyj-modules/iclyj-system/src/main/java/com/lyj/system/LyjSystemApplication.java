@@ -2,6 +2,7 @@ package com.lyj.system;
 
 import com.lyj.common.security.annotation.EnableCustomConfig;
 import com.lyj.common.security.annotation.EnableLyjFeignClients;
+import com.lyj.common.swagger.annotation.EnableCustomSwagger2;
 import org.springframework.boot.SpringApplication;
 import org.springframework.cloud.client.SpringCloudApplication;
 
@@ -12,6 +13,7 @@ import org.springframework.cloud.client.SpringCloudApplication;
  */
 @EnableCustomConfig
 @EnableLyjFeignClients
+@EnableCustomSwagger2
 @SpringCloudApplication
 public class LyjSystemApplication {
 

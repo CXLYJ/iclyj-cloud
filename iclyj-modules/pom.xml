@@ -56,6 +56,13 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>iclyj</groupId>
+            <artifactId>iclyj-common-swagger</artifactId>
+            <version>${iclyj.version}</version>
+        </dependency>
+
     </dependencies>
 
 
