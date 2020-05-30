@@ -2,7 +2,8 @@ package com.lyj.gateway.handler;
 
 import com.alibaba.fastjson.JSON;
 import com.lyj.common.core.domain.R;
-import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Component;
@@ -17,18 +18,18 @@ import java.util.Optional;
 import static org.springframework.cloud.gateway.support.ServerWebExchangeUtils.GATEWAY_ORIGINAL_REQUEST_URL_ATTR;
 
 /**
- * @author ：lyj
- * @email: : iclyj@iclyj.cn
- * @date ：2020/5/29
- *
  * 熔断降级处理
+ * 
+ * @author ruoyi
  */
 @Component
-@Slf4j
-public class HystrixFallbackHandler implements HandlerFunction<ServerResponse> {
-
+public class HystrixFallbackHandler implements HandlerFunction<ServerResponse>
+{
+    private static final Logger log = LoggerFactory.getLogger(HystrixFallbackHandler.class);
+    
     @Override
-    public Mono<ServerResponse> handle(ServerRequest serverRequest) {
+    public Mono<ServerResponse> handle(ServerRequest serverRequest)
+    {
         Optional<Object> originalUris = serverRequest.attribute(GATEWAY_ORIGINAL_REQUEST_URL_ATTR);
         originalUris.ifPresent(originalUri -> log.error("网关执行请求:{}失败,hystrix服务降级处理", originalUri));
         return ServerResponse.status(HttpStatus.INTERNAL_SERVER_ERROR.value()).contentType(MediaType.APPLICATION_JSON)
