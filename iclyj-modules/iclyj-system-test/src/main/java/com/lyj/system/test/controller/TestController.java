@@ -13,9 +13,14 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("sys-test")
 public class TestController {
 
-    @GetMapping("test")
+    @GetMapping("testAuth")
     public String TestAuth(){
         return "testAuth";
+    }
+
+    @GetMapping("testUNAuth")
+    public String TestUNAuth(){
+        return "testUNAuth";
     }
 
 }
