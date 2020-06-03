@@ -1,5 +1,6 @@
 package com.lyj.system.test.controller;
 
+import com.lyj.common.log.annotation.SysLog;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -19,6 +20,7 @@ public class TestController {
     }
 
     @GetMapping("testUNAuth")
+    @SysLog
     public String TestUNAuth(){
         return "testUNAuth";
     }

@@ -88,6 +88,11 @@
             <artifactId>iclyj-common-swagger</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>iclyj</groupId>
+            <artifactId>iclyj-common-log</artifactId>
+        </dependency>
+
     </dependencies>
 
 
