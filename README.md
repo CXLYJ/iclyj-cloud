@@ -5,6 +5,11 @@
 
 SpringCloudAlibaba + SpringCloud + Nacos + SpringSecurity + Oauth2.0 + Feign + Gateway + Redis
 
+
+> nacos账号密码：iclyj/iclyj
+
+> iclyj-cloud用户名密码：admin/admin123
+
 ![](https://www.processon.com/view/link/5ea64660f346fb177b98c43b)
 
 ## 关注公众号领取学习java和分布式资源
