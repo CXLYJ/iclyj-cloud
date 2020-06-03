@@ -192,6 +192,13 @@
                 <version>${iclyj.version}</version>
             </dependency>
 
+            <!-- 日志服务 -->
+            <dependency>
+                <groupId>iclyj</groupId>
+                <artifactId>iclyj-common-log</artifactId>
+                <version>${iclyj.version}</version>
+            </dependency>
+
             <!-- 系统接口 -->
             <dependency>
                 <groupId>iclyj</groupId>
