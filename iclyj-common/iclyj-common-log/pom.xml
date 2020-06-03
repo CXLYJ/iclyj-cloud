@@ -3,34 +3,34 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>iclyj-cloud</artifactId>
+        <artifactId>iclyj-common</artifactId>
         <groupId>iclyj</groupId>
         <version>1.0.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>iclyj</groupId>
-    <artifactId>iclyj-common</artifactId>
-    <packaging>pom</packaging>
+    <artifactId>iclyj-common-log</artifactId>
     <version>1.0.0</version>
 
     <description>
-        通用模块
+        日志记录
     </description>
-    <modules>
-        <module>iclyj-common-core</module>
-        <module>iclyj-common-security</module>
-        <module>iclyj-common-redis</module>
-        <module>iclyj-common-swagger</module>
-        <module>iclyj-common-datascope</module>
-        <module>iclyj-common-log</module>
-    </modules>
+
 
     <dependencies>
+
+        <!-- Bitwalker -->
         <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
+            <groupId>eu.bitwalker</groupId>
+            <artifactId>UserAgentUtils</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>iclyj</groupId>
+            <artifactId>iclyj-common-security</artifactId>
+        </dependency>
+
     </dependencies>
 
 
