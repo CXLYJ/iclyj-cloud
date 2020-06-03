@@ -19,7 +19,7 @@ import org.springframework.stereotype.Component;
 public class SysLogAspect
 {
 
-    @Pointcut("@annotation(com.lyj.common.log.annotation.sysLog)")
+    @Pointcut("@annotation(com.lyj.common.log.annotation.SysLog)")
     public void PointCut() {
     }
 
