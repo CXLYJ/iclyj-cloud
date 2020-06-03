@@ -36,7 +36,7 @@ public class SysLogAspect
         //执行时长(毫秒)
         long time = System.currentTimeMillis() - beginTime;
 
-        log.info("执行了当前的方法......." + time);
+        log.info("执行了当前的方法所需时间：" + time);
 
         return result;
     }
