@@ -10,6 +10,8 @@ SpringCloudAlibaba + SpringCloud + Nacos + SpringSecurity + Oauth2.0 + Feign + G
 
 > iclyj-cloud用户名密码：admin/admin123
 
+> 具体操作链接：https://mp.weixin.qq.com/s/OxteGWLgBmkxO9ax6nQ0bQ
+
 ![](https://www.processon.com/view/link/5ea64660f346fb177b98c43b)
 
 ## 关注公众号领取学习java和分布式资源
