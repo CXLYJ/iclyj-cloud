@@ -1,0 +1,82 @@
+ribbon:
+  eureka:
+    enabled: true # 开启eureka轮询
+  eager-load:
+    enabled: true  # 开启Ribbon的饥饿加载模式(防止第一次请求超时的问题)
+    clients: user,product # 指定需要开启的服务(需要开启Ribbon的饥饿加载模式)
+  ReadTimeout: 10000
+  ConnectTimeout: 10000
+  MaxAutoRetries: 0
+  MaxAutoRetriesNextServer: 1
+  OkToRetryOnAllOperations: false
+
+# 设置最大容错超时时间
+# 执行超时时间为9秒，会对服务熔断路由defaultfallback生效
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 90000
+
+# feign 配置
+feign:
+  hystrix:
+    enabled: true
+  okhttp:
+    enabled: true
+  httpclient:
+    enabled: false
+  client:
+    config:
+      default:
+        connectTimeout: 10000
+        readTimeout: 10000
+  compression:
+    request:
+      enabled: true
+    response:
+      enabled: true
+
+# 设置最大容错超时时间
+hystrix:
+  threadpool:
+    default:
+      coreSize: 100
+      maximumSize: 5000
+      allowMaximumSizeToDivergeFromCoreSize: true
+      maxQueueSize: -1
+  command:
+    default:
+      circuitBreaker:
+        # 是否强制将断路器设置成开启状态（true开启，false不开启）最好不开启否者会导致访问服务一直熔断
+        foreOpen: false
+      execution:
+        timeout:
+          enabled: true
+        isolation:
+          strategy: SEMAPHORE
+          thread:
+            timeoutInMilliseconds: 900000
+    shareSecurityContext: true
+
+# 暴露监控端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+# 认证配置
+security:
+  oauth2:
+    client:
+      client-id: iclyj
+      client-secret: 123456
+      scope: server
+    resource:
+      loadBalanced: true
+      token-info-uri: http://iclyj-auth/oauth/check_token
+    # 不需要请求认证(token)的url
+    ignore:
+      urls:
+        - /v2/api-docs
+        - /actuator/**
+        - /user/info/*
+        - /operlog
+        - /sys-test/testAuth

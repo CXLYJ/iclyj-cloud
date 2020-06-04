@@ -1,0 +1,28 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3307/iclyj-cloud?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
+    username: root
+    password: root
+
+mybatis:
+  # 指定别名设置的包为所有entity
+  type-aliases-package: com.lyj
+  configuration:
+    map-underscore-to-camel-case: true # 驼峰命名规范
+  mapper-locations: # mapper映射文件位置
+    - classpath:mapper/*.xml
+
+# swagger 配置
+swagger:
+  title: 系统模块接口文档
+  license: Powered By iclyj
+  licenseUrl: https://iclyj.cn
+  authorization:
+    name: iclyj OAuth
+    auth-regex: ^.*$
+    authorization-scope-list:
+      - scope: server
+        description: 客户端授权范围
+    token-url-list:
+      - http://localhost:9090/auth/oauth/token
