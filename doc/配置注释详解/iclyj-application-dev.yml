@@ -3,7 +3,7 @@ ribbon:
     enabled: true # 开启eureka轮询
   eager-load:
     enabled: true  # 开启Ribbon的饥饿加载模式(防止第一次请求超时的问题)
-    clients: user,product # 指定需要开启的服务(需要开启Ribbon的饥饿加载模式)
+    clients: iclyj-system,iclyj-system-test # 指定需要开启的服务(需要开启Ribbon的饥饿加载模式)
   ReadTimeout: 10000
   ConnectTimeout: 10000
   MaxAutoRetries: 0
