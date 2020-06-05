@@ -1,0 +1,24 @@
+## swagger Authorize 获取token
+    * type ：默认 request-body
+    * scopes : 勾选 server
+
+    username ：admin
+    password : admin123
+    client-id :iclyj
+    client_secret : 123456
+
+
+
+
+## postman 登录获取token
+
+params 参数
+    username : admin
+    password : admin123
+    scope : server
+    grant_type : password
+
+Authorization 参数
+    type 选择 basic auth
+    username : web
+    password : 123456
