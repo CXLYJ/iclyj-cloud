@@ -23,6 +23,10 @@ spring:
           predicates:
             - Path=/system/**
           filters:
+          - name: Hystrix
+            args:
+              name: fallback
+              fallbackUri: forward:/fallback
             - StripPrefix=1
         # 系统测试模块
         - id: iclyj-system-test
@@ -33,7 +37,7 @@ spring:
             - StripPrefix=1
 
 
-# 不校验验证码终端
+# 不校验验证码终端(swagger认证的client_id)
 ignore:
   clients:
     - iclyj
