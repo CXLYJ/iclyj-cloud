@@ -17,6 +17,8 @@ import javax.servlet.http.HttpServletResponse;
  * @author ：lyj
  * @email: : iclyj@iclyj.cn
  * @date ：2020/5/27
+ *
+ * 自定义访问无权限资源时的异常
  */
 @Component
 public class CustomAccessDeniedHandler extends OAuth2AccessDeniedHandler

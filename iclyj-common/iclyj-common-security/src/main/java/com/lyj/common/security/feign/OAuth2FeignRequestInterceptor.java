@@ -12,6 +12,8 @@ import org.springframework.stereotype.Component;
  * @author ：lyj
  * @email: : iclyj@iclyj.cn
  * @date ：2020/5/27
+ *
+ * feign 请求拦截器
  */
 @Component
 public class OAuth2FeignRequestInterceptor implements RequestInterceptor {
