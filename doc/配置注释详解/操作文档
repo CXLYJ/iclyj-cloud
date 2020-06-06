@@ -1,3 +1,6 @@
+#   授权认证操作步骤
+
+
 ## swagger Authorize 获取token
     * type ：默认 request-body
     * scopes : 勾选 server
