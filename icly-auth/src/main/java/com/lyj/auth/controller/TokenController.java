@@ -1,4 +1,4 @@
-package auth.controller;
+package com.lyj.auth.controller;
 
 import com.lyj.common.core.domain.R;
 import com.lyj.common.core.utils.StringUtils;

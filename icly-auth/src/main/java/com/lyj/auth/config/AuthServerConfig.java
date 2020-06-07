@@ -1,5 +1,5 @@
-package auth.config;
-import auth.exception.CustomWebResponseExceptionTranslator;
+package com.lyj.auth.config;
+import com.lyj.auth.exception.CustomWebResponseExceptionTranslator;
 import com.lyj.common.core.constant.CacheConstants;
 import com.lyj.common.core.constant.SecurityConstants;
 import com.lyj.common.security.domain.LoginUser;

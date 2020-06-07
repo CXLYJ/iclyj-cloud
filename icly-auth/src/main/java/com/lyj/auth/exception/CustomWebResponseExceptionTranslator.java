@@ -1,4 +1,4 @@
-package auth.exception;
+package com.lyj.auth.exception;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.oauth2.common.exceptions.OAuth2Exception;

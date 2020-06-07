@@ -1,4 +1,4 @@
-package auth.handler;
+package com.lyj.auth.handler;
 
 import com.lyj.common.core.utils.ServletUtils;
 import com.lyj.common.security.handler.AbstractAuthenticationFailureEvenHandler;

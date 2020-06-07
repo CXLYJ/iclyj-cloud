@@ -1,4 +1,4 @@
-package auth;
+package com.lyj.auth;
 
 import com.lyj.common.security.annotation.EnableLyjFeignClients;
 import org.slf4j.LoggerFactory;
