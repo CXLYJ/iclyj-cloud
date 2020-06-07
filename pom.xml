@@ -15,6 +15,7 @@
         <module>iclyj-modules</module>
         <module>icly-auth</module>
         <module>iclyj-gateway</module>
+        <module>iclyj-tool</module>
     </modules>
 
     <name>iclyj</name>
@@ -72,7 +73,14 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-            
+
+            <!--  SpringBoot 监控客户端 -->
+            <!--注册上SpringAdmin所需的客户端依赖-->
+            <dependency>
+                <groupId>de.codecentric</groupId>
+                <artifactId>spring-boot-admin-starter-client</artifactId>
+                <version>${spring-boot-admin.version}</version>
+            </dependency>
 
             <!-- Mybatis 依赖配置 -->
             <dependency>
