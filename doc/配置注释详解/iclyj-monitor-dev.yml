@@ -1,0 +1,10 @@
+# Spring
+spring:
+  security:
+    user:
+      name: iclyj
+      password: iclyj
+  boot:
+    admin:
+      ui:
+        title: ${spring.application.name}
