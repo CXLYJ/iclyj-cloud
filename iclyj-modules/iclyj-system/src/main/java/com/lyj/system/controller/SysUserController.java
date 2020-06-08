@@ -29,7 +29,6 @@ public class SysUserController extends BaseController
     private ISysPermissionService permissionService;
 
 
-
     /**
      * 获取当前用户信息
      */
