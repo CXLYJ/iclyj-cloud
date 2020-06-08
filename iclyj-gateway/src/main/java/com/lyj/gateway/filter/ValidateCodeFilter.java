@@ -1,6 +1,7 @@
 package com.lyj.gateway.filter;
 
 import com.alibaba.fastjson.JSON;
+import com.lyj.common.core.constant.SecurityConstants;
 import com.lyj.common.core.exception.CheckedException;
 import com.lyj.common.core.utils.StringUtils;
 import com.lyj.common.core.web.domain.AjaxResult;
@@ -28,9 +29,6 @@ import java.nio.charset.StandardCharsets;
 @Component
 public class ValidateCodeFilter extends AbstractGatewayFilterFactory<Object>
 {
-    private final static String AUTH_URL = "/oauth/token";
-
-    private static final String BASIC_ = "Basic ";
 
     @Autowired
     private IgnoreClientProperties ignoreClient;
@@ -45,7 +43,7 @@ public class ValidateCodeFilter extends AbstractGatewayFilterFactory<Object>
             ServerHttpRequest request = exchange.getRequest();
 
             // 非登录请求，直接向下执行
-            if (!StringUtils.containsIgnoreCase(request.getURI().getPath(), AUTH_URL))
+            if (!StringUtils.containsIgnoreCase(request.getURI().getPath(), SecurityConstants.AUTH_TOKEN))
             {
                 return chain.filter(exchange);
             }
@@ -80,7 +78,7 @@ public class ValidateCodeFilter extends AbstractGatewayFilterFactory<Object>
     {
         String header = request.getHeaders().getFirst(HttpHeaders.AUTHORIZATION);
 
-        if (header == null || !header.startsWith(BASIC_))
+        if (header == null || !header.startsWith(SecurityConstants.BASIC_))
         {
             throw new CheckedException("请求头中client信息为空");
         }

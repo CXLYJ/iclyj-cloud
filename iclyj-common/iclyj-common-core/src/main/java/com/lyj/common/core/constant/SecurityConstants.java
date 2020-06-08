@@ -32,6 +32,11 @@ public class SecurityConstants
     public static final String BEARER_TOKEN_TYPE = "Bearer";
 
     /**
+     * token 令牌前缀(Basic认证)
+     */
+    public static final String BASIC_ = "Basic ";
+
+    /**
      * sys_oauth_client_details 表的字段，不包括client_id、client_secret
      */
     public static final String CLIENT_FIELDS = "client_id, client_secret, resource_ids, scope, "
