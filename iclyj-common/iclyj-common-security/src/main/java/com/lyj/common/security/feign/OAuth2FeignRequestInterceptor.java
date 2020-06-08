@@ -1,7 +1,9 @@
 package com.lyj.common.security.feign;
 
+import com.lyj.common.core.constant.SecurityConstants;
 import feign.RequestInterceptor;
 import feign.RequestTemplate;
+import org.springframework.http.HttpHeaders;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContext;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -18,10 +20,6 @@ import org.springframework.stereotype.Component;
 @Component
 public class OAuth2FeignRequestInterceptor implements RequestInterceptor {
 
-    private final String AUTHORIZATION_HEADER = "Authorization";
-
-    private final String BEARER_TOKEN_TYPE = "Bearer";
-
     @Override
     public void apply(RequestTemplate requestTemplate) {
         SecurityContext securityContext = SecurityContextHolder.getContext();
@@ -30,8 +28,8 @@ public class OAuth2FeignRequestInterceptor implements RequestInterceptor {
         {
             OAuth2AuthenticationDetails dateils = (OAuth2AuthenticationDetails) authentication.getDetails();
             //设置请求token信息
-            requestTemplate.header(AUTHORIZATION_HEADER,
-                    String.format("%s %s", BEARER_TOKEN_TYPE, dateils.getTokenValue()));
+            requestTemplate.header(HttpHeaders.AUTHORIZATION,
+                    String.format("%s %s", SecurityConstants.BEARER_TOKEN_TYPE, dateils.getTokenValue()));
         }
     }
 }
