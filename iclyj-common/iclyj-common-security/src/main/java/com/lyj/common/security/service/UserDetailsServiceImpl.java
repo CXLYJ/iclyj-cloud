@@ -1,5 +1,6 @@
 package com.lyj.common.security.service;
 
+import com.lyj.common.core.constant.SecurityConstants;
 import com.lyj.common.core.domain.R;
 import com.lyj.common.core.enums.UserStatus;
 import com.lyj.common.core.exception.BaseException;
@@ -40,7 +41,7 @@ public class UserDetailsServiceImpl implements UserDetailsService
     @Override
     public UserDetails loadUserByUsername(String username)
     {
-        R<UserInfo> userResult = remoteUserService.getUserInfo(username);
+        R<UserInfo> userResult = remoteUserService.getUserInfo(username, SecurityConstants.FROM_IN);
         checkUser(userResult, username);
         return getUserDetails(userResult);
     }

@@ -41,6 +41,7 @@
         <poi.version>3.17</poi.version>
         <common-pool.version>2.6.2</common-pool.version>
         <bitwalker.version>1.19</bitwalker.version>
+        <hutool.version>5.3.5</hutool.version>
     </properties>
 
     <!-- 依赖声明 -->

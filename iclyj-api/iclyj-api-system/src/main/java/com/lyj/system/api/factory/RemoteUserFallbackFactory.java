@@ -25,8 +25,7 @@ public class RemoteUserFallbackFactory implements FallbackFactory<RemoteUserServ
         return new RemoteUserService()
         {
             @Override
-            public R<UserInfo> getUserInfo(String username)
-            {
+            public R<UserInfo> getUserInfo(String username, String from) {
                 return null;
             }
         };

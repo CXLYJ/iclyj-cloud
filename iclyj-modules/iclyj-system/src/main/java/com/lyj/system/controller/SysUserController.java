@@ -3,6 +3,7 @@ package com.lyj.system.controller;
 import com.lyj.common.core.domain.R;
 import com.lyj.common.core.web.controller.BaseController;
 import com.lyj.common.core.web.domain.AjaxResult;
+import com.lyj.common.security.config.IclyjInner;
 import com.lyj.common.security.utils.SecurityUtils;
 import com.lyj.system.api.domain.SysUser;
 import com.lyj.system.api.model.UserInfo;
@@ -32,6 +33,7 @@ public class SysUserController extends BaseController
     /**
      * 获取当前用户信息
      */
+    @IclyjInner
     @GetMapping("/info/{username}")
     public R<UserInfo> info(@PathVariable("username") String username)
     {

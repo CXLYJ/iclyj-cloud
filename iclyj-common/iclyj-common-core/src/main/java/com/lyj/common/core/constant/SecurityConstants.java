@@ -37,6 +37,16 @@ public class SecurityConstants
     public static final String BASIC_ = "Basic ";
 
     /**
+     * 内部
+     */
+    public static final String FROM_IN = "Y";
+
+    /**
+     * 标志
+     */
+    public static final String FROM = "from";
+
+    /**
      * sys_oauth_client_details 表的字段，不包括client_id、client_secret
      */
     public static final String CLIENT_FIELDS = "client_id, client_secret, resource_ids, scope, "

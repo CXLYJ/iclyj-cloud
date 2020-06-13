@@ -1,5 +1,6 @@
 package com.lyj.common.datascope.service;
 
+import com.lyj.common.core.constant.SecurityConstants;
 import com.lyj.common.core.domain.R;
 import com.lyj.common.core.utils.StringUtils;
 import com.lyj.common.security.utils.SecurityUtils;
@@ -27,7 +28,7 @@ public class AwaitUserService {
 
     public UserInfo info(){
         String username = SecurityUtils.getUsername();
-        R<UserInfo> userResult = remoteUserService.getUserInfo(username);
+        R<UserInfo> userResult = remoteUserService.getUserInfo(username, SecurityConstants.FROM);
         if (StringUtils.isNull(userResult) || StringUtils.isNull(userResult.getData()))
         {
             log.info("数据权限范围查询用户：{} 不存在.", username);
