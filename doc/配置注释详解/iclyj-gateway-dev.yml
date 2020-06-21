@@ -23,10 +23,10 @@ spring:
           predicates:
             - Path=/system/**
           filters:
-          - name: Hystrix
-            args:
-              name: fallback
-              fallbackUri: forward:/fallback
+#          - name: Hystrix
+#            args:
+#              name: fallback
+#              fallbackUri: forward:/fallback
             - StripPrefix=1
         # 系统测试模块
         - id: iclyj-system-test
