@@ -1,0 +1,26 @@
+[
+{
+  "resource": "iclyj-auth",
+  "count": 500,
+  "grade": 1,
+  "limitApp": "default",
+  "strategy": 0,
+  "controlBehavior": 0
+},
+{
+  "resource": "iclyj-system",
+  "count": 1000,
+  "grade": 1,
+  "limitApp": "default",
+  "strategy": 0,
+  "controlBehavior": 0
+},
+{
+  "resource": "iclyj-system-test",
+  "count": 1000,
+  "grade": 1,
+  "limitApp": "default",
+  "strategy": 0,
+  "controlBehavior": 0
+}
+]
