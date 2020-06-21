@@ -23,6 +23,7 @@
             <artifactId>spring-cloud-starter-gateway</artifactId>
         </dependency>
 
+        <!--使用sentinel时去掉Hystrix熔断-->
         <!-- SpringCloud Netflix Hystrix -->
        <!-- <dependency>
             <groupId>org.springframework.cloud</groupId>

@@ -39,7 +39,7 @@ public class RouterFunctionConfiguration
                 // 路由验正码生成接口
                 .route(RequestPredicates.GET("/code")
                         .and(RequestPredicates.accept(MediaType.TEXT_PLAIN)),validateCodeHandler)
-                // Hystrix路由熔断返回信息
+                // Hystrix路由熔断返回信息(使用sentinel时去掉Hystrix熔断)
 //                .andRoute(RequestPredicates.path("/fallback")
 //                         .and(RequestPredicates.accept(MediaType.TEXT_PLAIN)),hystrixFallbackHandler)
                 .andRoute(RequestPredicates.GET("/swagger-resources")
