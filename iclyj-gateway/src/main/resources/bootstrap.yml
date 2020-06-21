@@ -3,7 +3,7 @@ server:
   port: 9090
 
 # Spring
-spring: 
+spring:
   application:
     # 应用名称
     name: iclyj-gateway
@@ -22,3 +22,18 @@ spring:
         file-extension: yml
         # 共享配置
         shared-dataids: iclyj-application-${spring.profiles.active}.${spring.cloud.nacos.config.file-extension}
+    sentinel:
+      # 取消控制台懒加载
+      eager: true
+      transport:
+        # 控制台地址
+        dashboard: 127.0.0.1:8718
+      # nacos配置持久化
+      datasource:
+        ds1:
+          nacos:
+            server-addr: 127.0.0.1:8848
+            dataId: sentinel-iclyj-gateway
+            groupId: DEFAULT_GROUP
+            data-type: json
+            rule-type: flow

@@ -36,12 +36,12 @@ public class RouterFunctionConfiguration
     public RouterFunction routerFunction()
     {
         return RouterFunctions
-                // 路由熔断返回信息
-                .route(RequestPredicates.path("/fallback")
-                         .and(RequestPredicates.accept(MediaType.TEXT_PLAIN)),hystrixFallbackHandler)
                 // 路由验正码生成接口
-                .andRoute(RequestPredicates.GET("/code")
+                .route(RequestPredicates.GET("/code")
                         .and(RequestPredicates.accept(MediaType.TEXT_PLAIN)),validateCodeHandler)
+                // Hystrix路由熔断返回信息
+//                .andRoute(RequestPredicates.path("/fallback")
+//                         .and(RequestPredicates.accept(MediaType.TEXT_PLAIN)),hystrixFallbackHandler)
                 .andRoute(RequestPredicates.GET("/swagger-resources")
                         .and(RequestPredicates.accept(MediaType.ALL)), swaggerResourceHandler)
                 .andRoute(RequestPredicates.GET("/swagger-resources/configuration/ui")
