@@ -21,9 +21,9 @@ public class SysPermissionServiceImpl implements ISysPermissionService
 
     /**
      * 获取角色数据权限
-     * 
-     * @param user 用户信息
-     * @return 角色权限信息
+     *
+     * @param userId 用户ID
+     * @return
      */
     public Set<String> getRolePermission(Long userId)
     {
@@ -42,9 +42,9 @@ public class SysPermissionServiceImpl implements ISysPermissionService
 
     /**
      * 获取菜单数据权限
-     * 
-     * @param user 用户信息
-     * @return 菜单权限信息
+     *
+     * @param userId 用户ID
+     * @return
      */
     public Set<String> getMenuPermission(Long userId)
     {
