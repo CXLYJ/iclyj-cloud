@@ -1,1 +1,0 @@
-java -jar .\sentinel-dashboard-1.7.1.jar --server.port=8718
